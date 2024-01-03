@@ -1,0 +1,10 @@
+/*
+package com.example.springsecuritydbdemo.dao;
+
+import com.example.springsecuritydbdemo.entity.Authorities;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+public interface AuthoritiesDao extends
+        JpaRepository<Authorities, Integer>, JpaSpecificationExecutor<Authorities> {
+}*/

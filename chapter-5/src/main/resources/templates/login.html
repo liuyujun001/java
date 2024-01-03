@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>请登录</title>
+    </head>
+    <body>
+        <div>
+            <form th:action="@{/login}" method="post" action="/login">
+                <p>
+                    <span>请输入用户名:</span>
+                    <input type="text" id="username" name="username">
+                </p>
+                <p>
+                    <span>请输入密码:</span>
+                    <input type="password" id="password" name="password">
+                </p>
+                <input type="submit" value="登录"/>
+            </form>
+        </div>
+    </body>
+</html>
+
+

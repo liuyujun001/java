@@ -1,0 +1,14 @@
+/*
+package com.example.springsecuritydbdemo.dao;
+
+import com.example.springsecuritydbdemo.entity.Users;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+public interface UsersDao extends
+        JpaRepository<Users, Integer>, JpaSpecificationExecutor<Users> {
+
+    Users findByUsername(String username);
+
+}
+*/

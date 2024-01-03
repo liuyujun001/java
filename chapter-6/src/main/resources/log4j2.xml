@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO" monitorInterval="30" packages="com.example.springextenddemo">
+    <!--定义appenders-->
+    <appenders>
+        <myAppender name="myAppender" printString=":start log:">
+            <!--输出日志的格式-->
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+        </myAppender>
+    </appenders>
+    <!--自定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <loggers>
+        <!--spring和mybatis的日志级别为info-->
+        <logger name="org.springframework" level="INFO"></logger>
+        <logger name="org.mybatis" level="INFO"></logger>
+        <logger name="org.quartz" level="INFO"></logger>
+        <!-- 自定义包下设置为INFO,则可以看见输出的日志不包含debug输出了 -->
+        <logger name="com.example.springextenddemo" level="INFO"/>
+        <root level="all">
+            <appender-ref ref="myAppender"/>
+        </root>
+    </loggers>
+</configuration>
